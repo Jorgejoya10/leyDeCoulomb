@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fuerza CE</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Raleway:wght@300;500;700&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <nav class="nav2">
+            <a href="index.html">Inicio</a>
+            <a href="campoElectrico.html">Campo Eléctrico</a>
+        </nav>
+        <h1> Calculadora de Fuerza Eléctrica.</h1>
+        <div class="contenedor">
+            <form>
+                <label class="carga2" for="family"> CampoEléctrico </label>
+                <input placeholder="Campo (N/C)" type="number" id="cp" name="cp" step="0.0000001"><br>
+                <label class="carga1" for="q1"> Carga</label>
+                <input placeholder="Carga (c)" type="number" id="q1" name="q1" step="0.000000001"><br>
+                <button id="calcular-btn" type="submit">Calcular</button>
+            </form>
+            <div class="contenedor">
+                <div class="formula">
+                    <img src="img/fuerza2.png" alt=""> <br>
+                </div>
+            </div>
+        </div>
+        <p>El valor del Campo Eléctrico: <span id="resultado"></span></p>
+        <img class="imgCampo" src="img/campo2.png" alt="">
+        <script src="js/fuerza.js"></script>
+    </body>
+    
+</html>

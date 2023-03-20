@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ley de Coulomb</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Raleway:wght@300;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="leyCoulomb.html">Fuerza</a>
+        <a href="distancia.html">Distancia</a>
+        <a href="carga.html">Carga</a>
+    </nav>
+    <h1> Calculadora de Fuerza eléctrica. </h1>
+    <div class="contenedor">
+        <form>
+            <label class="carga1" for="q1"> Carga 1 </label>
+            <input placeholder="Carga 1 (c)" type="number" id="q1" name="q1" step="0.0000001"><br>
+            <label class="carga2" for="q2"> Carga 2</label>
+            <input placeholder="Carga 2 (c)" type="number" id="q2" name="q2" step="0.0000001"><br>
+            <label class="distancia" for="r"> Distancia</label>
+            <input placeholder="Distancia (m)" type="number" id="r" name="r" step="0.0000001"><br>
+            <button id="calcular-btn" type="submit">Calcular</button>
+        </form>
+        <div class="contenedor">
+            <div class="formula">
+                <img src="img/Formula.png" alt=""> <br>
+                <img src="img/constante.png" alt="">
+            </div>
+        </div>
+    </div>
+    <p>La fuerza Eléctrica entre las cargas es: <span id="resultado"></span></p>
+    <img class="img" src="img/Imagen.png" alt="">
+    <script src="js/leyCoulomb.js"></script>
+</body> 
+
+</html>
